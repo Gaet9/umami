@@ -1,5 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "nextjs",
   "installCommand": "npx --yes pnpm@12.3.4 install --frozen-lockfile",
   "buildCommand": "([ -d .git ] || git init -q) && touch .gitignore && DIRECT_DATABASE_URL=\"${DIRECT_DATABASE_URL:-${DATABASE_URL_UNPOOLED:-$DATABASE_URL}}\" npx --yes pnpm@12.3.4 run build"
 }
